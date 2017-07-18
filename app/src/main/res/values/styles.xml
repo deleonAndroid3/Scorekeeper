@@ -10,6 +10,8 @@
 
     <style name="page_background_wh">
         <item name="android:background">#2e2e2e</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_padding</item>
     </style>
 
 

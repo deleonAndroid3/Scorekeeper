@@ -1,6 +1,7 @@
 package tech.hyperdev.scorekeeper.fragments;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -65,5 +66,21 @@ public class ScoreFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
 
+        if (outState != null)
+            outState.putString("score", String.valueOf(score));
+    }
+
+    @Override
+    public void onViewStateRestored(@Nullable Bundle savedInstanceState) {
+        super.onViewStateRestored(savedInstanceState);
+
+        if (savedInstanceState != null) {
+            score = Integer.parseInt(savedInstanceState.getString("score"));
+            mTvScore.setText(String.valueOf(score));
+        }
+    }
 }
