@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         FragmentManager fragmentManager = getSupportFragmentManager();
-        ScoreFragment SF1 = new ScoreFragment();
-        ScoreFragment SF2 = new ScoreFragment();
+        ScoreFragment SF1 = ScoreFragment.newInstance(getString(R.string.team_1));
+        ScoreFragment SF2 = ScoreFragment.newInstance(getString(R.string.team_2));
 
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.FM1,SF1);
