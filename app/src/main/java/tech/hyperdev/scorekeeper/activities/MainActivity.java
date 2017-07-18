@@ -15,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+       addFragments();
+    }
+
+    public void addFragments(){
         FragmentManager fragmentManager = getSupportFragmentManager();
         ScoreFragment SF1 = ScoreFragment.newInstance(getString(R.string.team_1));
         ScoreFragment SF2 = ScoreFragment.newInstance(getString(R.string.team_2));
