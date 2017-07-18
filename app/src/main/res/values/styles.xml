@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="page_background_wh">
+        <item name="android:background">#2e2e2e</item>
+    </style>
+
+
 </resources>

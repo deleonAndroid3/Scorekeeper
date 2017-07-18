@@ -50,7 +50,7 @@ public class ScoreFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 score--;
-                mTvScore.setText(score + "");
+                mTvScore.setText(String.valueOf(score));
             }
         });
 
@@ -58,7 +58,7 @@ public class ScoreFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 score++;
-                mTvScore.setText(score + "");
+                mTvScore.setText(String.valueOf(score));
             }
         });
 

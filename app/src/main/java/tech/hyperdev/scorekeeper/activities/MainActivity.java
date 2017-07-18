@@ -29,4 +29,9 @@ public class MainActivity extends AppCompatActivity {
 
         fragmentTransaction.commit();
     }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+    }
 }
